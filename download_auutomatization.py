@@ -1,14 +1,14 @@
 import os
 import shutil
 
-default_download_folder = r'C:\Users\Komfig\Downloads'
+default_download_folder = r'/home/robertw/Downloads/'
 
-rar_files = r"C:\Users\Komfig\Downloads\Courses"
-ebook_files = r"C:\Users\Komfig\Downloads\ebooks"
+rar_files = r"/home/robertw/Videos/"
+ebook_files = r"/home/robertw/Documents/"
 
 try:
     for plik in os.listdir(default_download_folder):
-        if plik.endswith((".rar", '.zip')):
+        if plik.endswith((".rar", '.zip', '.7z')):
             source_path = os.path.join(default_download_folder, plik)
             destination_path = os.path.join(rar_files, plik)
             shutil.move(source_path, destination_path)
