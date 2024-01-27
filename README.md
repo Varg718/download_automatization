@@ -16,6 +16,10 @@ This project automates the organization of downloaded files by moving specific f
 3. Navigate to the project directory.
 4. Run the script.
 
+```bash
+download_auutomatization.py
+```
+
 ## Usage
 To use the script, run it in the directory containing your downloads. It will organize the files into respective folders.
 
